@@ -56,7 +56,7 @@ export default function Dropzone(props: DropzoneProps) {
       'output.mp4', // Имя выходного файла
     ]);
     const data = (await ffmpeg.readFile('output.mp4')) as any;
-    const compressedVideoUrl = URL.createObjectURL(new Blob([data.buffer], { type: 'video/mp4' }));
+    const compressedVideoUrl = URL.createObjectURL(new Blob([data?.buffer], { type: 'video/mp4' }));
     const a = document.createElement('a');
     a.href = compressedVideoUrl;
     a.download = 'compressed-video.mp4';
