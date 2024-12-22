@@ -1,0 +1,24 @@
+.page {
+    display: flex;            /* Используем flexbox для выравнивания */
+    justify-content: center;  /* Центрируем содержимое по горизонтали */
+    align-items: center;      /* Центрируем содержимое по вертикали (если нужно) */
+    height: 100vh;           /* Задаем высоту на весь экран */
+    margin: 0;               /* Убираем отступы */
+}
+
+.main {
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 32px;
+        padding-bottom: 80px;
+    }
+    .main {
+        align-items: center;
+    }
+}

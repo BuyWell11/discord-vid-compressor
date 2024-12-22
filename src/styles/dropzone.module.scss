@@ -1,0 +1,24 @@
+.dropzone {
+  display: flex;
+  border: #ffffff 1px solid;
+  padding: 12px 12px;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  .zone {
+    border: #ffffff 1px solid;
+    padding: 80px 12px;
+  }
+
+  .compression{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  video {
+    width: 240px;
+    height: 240px;
+  }
+}
